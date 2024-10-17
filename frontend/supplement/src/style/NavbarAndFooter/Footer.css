@@ -1,0 +1,261 @@
+footer{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.4);
+    font-family: "Roboto", sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.footerTop{
+    padding: 30px;
+    border-bottom: 1px solid var(--primary-color-hover);
+}
+
+.icon-text{
+    text-align: center;
+}
+
+.icon{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-radius: 50%;
+    background: var(--primary-color-hover);
+    box-shadow: 0 0 0 6px var(--cardBackground);
+    font-size: 45px;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trustItem{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.src{
+    border-radius: 5px 0 0 5px!important;
+    border: 2px solid var(--primary-color-hover)!important;
+}
+.search{
+    border-radius: 0 5px 5px 0!important;   
+    background-color: var(--text-color);
+    border: none;
+    color: var(--text-color-2);
+    border-radius: 5px;
+}
+
+.footerText h5{
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: .5rem;
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.footer-list li{
+    list-style: none;
+}
+
+.footer-list a, .footer-list button{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    left: 0;
+    transition: left 0.2s ease;
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.footer-list a:hover, .footer-list button:hover {
+    left: 5px;
+}
+
+.footer-list a::after, 
+.footer-list button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 1px;
+    background-color: var(--text-color); 
+    transition: width 0.5s ease;
+}
+
+.footer-list a:hover::after, 
+.footer-list button:hover::after {
+    width: 100%; 
+}
+
+.footerMid{
+    border-bottom: 1px solid var(--primary-color-hover);
+}
+
+.footerBottom p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.footerBottom a{
+    text-decoration: none;
+}
+
+.footerBottom{
+    padding: .5rem;
+}
+
+.contact-icon{
+    width: 50px;
+    height: 50px;
+    background: var(--main-color);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 0 rgba(0,0,0,.25);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.searchBar{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact{
+    background-color: var(--primary-color);
+    clip-path: polygon(calc(100% - 17px) 0%,100% 17px,100% 100%,17px 100%,0% calc(100% - 17px),0% 0%);
+}
+
+.payments{
+    border: 0;
+    width: 200px;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerText h5{
+        font-size: 16px;
+    }
+}
+
+.contactModal{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+    top: 0;
+    right: -150%;
+    overflow-y: hidden;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchModal{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+    top: 0;
+    right: -150%;
+    overflow-y: hidden;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.searchModalBar{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.showContactModal{
+    right:0;
+}
+
+.footerModalCenter{
+    position: fixed;
+    right: -150%;
+    transition: right .3s ease-in-out;
+    height: 30vh;
+    width: 25%;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 32px 0 0 0;
+}
+
+.showContactModalCenter{
+    right: 38%;
+}
+
+.contactModalItem{
+    background-color: var(--text-color-2);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 5px;
+    width: 85%;
+}
+
+.footerModalCenter h5{
+    color: var(--text-color-2);
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerModalCenter .fa-regular{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--text-color-2)!important;
+    font-size: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.footerModalCenter .fa-regular:hover{
+    color: #8a8a8a!important;
+}
+
+@media only screen and (max-width: 1100px) {
+    .footerModalCenter{
+        width: 70%
+    }
+
+    .showContactModalCenter{
+        right: 18%;
+    }
+}
+
+.searchModal .fa-circle-xmark{
+    color: white;
+    cursor: pointer;
+    font-size: 48px;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}

@@ -1,0 +1,1187 @@
+*{
+    font-family: 'Futura PT', sans-serif;
+}
+
+.nav-color{
+    background-color: var(--text-color-2);
+}
+
+.login{
+    padding: 8px 0;
+    width: 115px;
+    clip-path: polygon(100% 0%,100% 100%,100% 100%,15% 100%,0% 65%,0% 0%);
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.searchBar{
+    justify-content: center;
+}
+
+.signup{
+    padding: 8px 0;
+    width: 115px;
+    clip-path: polygon(85% 0%,100% 35%,100% 100%,0% 100%,0% 0%);
+    background: var(--main-color);
+    color: var(--text-color-2);
+    border: none;
+}
+
+.login span, .signup span{
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+}
+
+.bi-person-fill{
+    color: var(--main-color);
+}
+
+.signin{
+    padding: 8px 0;
+    width: 100px;
+    background: var(--main-color);
+    color: var(--text-color-2);
+    border: none;
+    border-radius: 5px;
+}
+
+.signin:hover{
+    background-color: var(--main-color-hover);
+}
+
+.login:hover{
+    background-color: var(--primary-color-hover);
+}
+
+.signup:hover{
+    background-color: var(--main-color-hover);
+}
+
+.search{
+    background-color: var(--primary-color-hover)!important;
+}
+
+
+.navbar{
+    background-color: var(--main-bg-color);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+.logo{
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.src{
+    border-radius: 5px 0 0 5px!important;
+    border: 2px solid var(--primary-color-hover)!important;
+}
+.search{
+    border-radius: 0 5px 5px 0!important;   
+    background-color: var(--text-color);
+    border: none;
+    color: var(--text-color-2);
+    border-radius: 5px;
+}
+
+.ourForm{
+    width: 100%;
+    position: relative;
+    background: var(--secondary-color);
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    color: #212529;
+}
+
+.menu{
+    display: flex;
+    background-color: transparent;
+    border: none!important;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+    justify-content: flex-start;
+}
+
+.mbNav{
+    height: 116px;
+}
+
+.hamburger-react{
+    margin-top: 5px;
+}
+
+.side-bar{
+    position: absolute;
+    top: 72px;
+    left: -100%; 
+    height: 100vh;
+    width: 100%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: left 0.25s ease, opacity 0.25s ease;
+    z-index: 1001;
+    overflow-y: hidden;
+}
+
+.side-bar.d-inline {
+    left: 0; 
+    opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-hide{
+        top: -165px;
+    }
+    .show-true{
+        top: 153px!important;
+    }
+}
+
+.show-nav{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    visibility: hidden;
+    padding: 5px 13px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    transition: background-color 200ms;
+}
+
+.show-nav .fa-solid{
+    margin-top: 5px;
+    color: var(--main-color);
+    transition: color .3s;
+}
+
+.show-nav:hover .fa-solid{
+    color: var(--primary-color);
+}
+
+.draw-left .fa-solid{
+    transition: all .5s;
+}
+
+.show-nav:hover{
+    background-color: var(--main-color);
+}
+
+.show-true{
+    visibility: visible;
+    top: 139px;
+}
+
+.side-button{
+    width: 100%;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 45px;
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.side-button:hover{
+    background-color: var(--main-color);
+    color: var(--text-color-2);
+}
+
+.back{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.side-bar-buttons{
+    width: 100%;
+    background-color: var(--text-color-2);
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 180px!important;
+    }
+}
+
+.navShadow{
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu{
+    border: 1px solid var(--primary-color-hover);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.menu td{
+    border: 1px solid var(--primary-color-hover);
+    height: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 14px;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+}
+
+.menu .icons{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.menu .fa-icons{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.menu .icon-text{
+    font-size: .8rem;
+    color: var(--text-color);
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 500;
+}
+
+.menu td:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar .categories{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-categories{
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.side-button span{
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 500;
+}
+
+.person{
+    padding: 16px 15px!important;
+}
+
+.userLogged{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.myAcc{
+    padding: 8px 0px;
+    width: 150px;
+    clip-path: polygon(100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 0%);
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.myAcc:hover{
+    background: var(--main-color);
+    color: var(--text-color-2);
+}
+
+.myAcc:hover .bi{
+    color: var(--text-color-2);
+}
+
+.myAcc .bi{
+    transition: all .3s;
+    color: var(--main-color);
+}
+
+.bi-caret-down-fill{
+    display: flex;
+    align-items: center;
+}
+
+.dropDown-topFake{
+    height: 5px;
+    background-color: var(--text-color-2)!important;
+}
+
+.account{
+    position: relative;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    top: 35px;
+    z-index: 9999;
+    border-radius: 5px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.dropDown-item{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px 0px;
+    transition: all .3s;
+    width: 100%;
+    gap: 20px;
+    padding-left: 15px;
+    border: 0;
+}
+
+.dropDown-divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(211, 211, 211);
+}
+
+.dropDown-item:hover {
+    background-color: var(--main-color);
+    color: var(--text-color-2);
+}
+
+.rightDrawer.d-flex {
+    right: 0; 
+    opacity: 1;
+}
+
+.rightDrawer{
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    height: 100vh;
+    opacity: 0;
+    transition: right .4s ease, opacity .4s ease;
+    z-index: 9999;
+}
+
+.drawer-right{
+    min-width: 250px;
+    height: 100vh;
+    background-color: rgb(16, 20, 24);
+    position: absolute;
+    right: 0;
+    clip-path: polygon(50% 0%, 79% 0, 100% 0, 100% 70%, 100% 100%, 0 85%, 0 0);
+}
+
+.off-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--text-color);
+    opacity: 0;
+}
+
+.off-canvas.d-inline{
+    opacity: .5;
+}
+
+.drawer-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0;
+    padding: 10px 8px 8px 10px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(0, 107, 214);
+}
+
+.drawer-close:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.drawHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem;
+    height: 62px;
+}
+
+.drawHeader span{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Futura PT', sans-serif;
+    margin-left: 8px;
+    color: var(--text-color-2)
+}
+
+
+.draw-button{
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    transition: all .3s;
+    background-color: transparent;
+    border-color: rgb(0, 97, 194);
+}
+
+.draw-left i{
+    font-size: 14px;
+    color: rgb(0, 97, 194);
+}
+
+.bi-chevron-right, .bi-chevron-down{
+    font-size: 10px;
+    color: rgb(0, 97, 194);
+}
+
+.draw-text{
+    font-size: 13px;
+    line-height: 1;
+    font-family: 'Futura PT', sans-serif;
+    color: var(--text-color-2);
+}
+
+.draw-button:hover{
+    background-color: rgb(0, 97, 194);
+    color: var(--text-color-2)!important;
+}
+
+.draw-button:hover .fa-solid, .draw-button:hover .bi-chevron-right{
+    color: var(--text-color-2)!important;
+}
+
+.dropElement{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-button{
+    border: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.dropdown-button:hover{
+    background-color: rgb(0, 97, 194);
+}
+
+.dropdown-button:hover .drop-icon{
+    color: var(--text-color-2);
+}
+
+.drop-icon{
+    font-size: 12px!important;
+    margin-top: 1px;
+    color: rgb(0, 97, 194);
+}
+
+.drop-draw-text{
+    font-weight: 300;
+    color: var(--text-color-2)!important;
+    font-size: 11px;
+    font-family: 'Futura PT', sans-serif;
+}
+
+.dropdown-button:hover .fa-arrow-right{
+    color: var(--main-color)!important;
+}
+
+.draw-dropdown{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+    transition: all 2s;
+    position: relative;
+}
+
+.logoutBtn:hover{
+    background-color: transparent!important;
+}
+
+.drawHeader-divider{
+    margin: 0px;
+    flex-shrink: 0;
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgba(31, 38, 46, 0.8);
+}
+
+.buttons-bar-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    text-decoration: inherit;
+    text-align: center;
+    flex-grow: 1!important; 
+}
+
+.buttons-bar-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.badges{
+    color: var(--text-color);
+}
+
+.shop{
+    padding: 10px;
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+.css-ai1ye3-MuiBadge-root .MuiBadge-badge{
+    background-color: red!important;
+    border-color: red!important;
+}
+
+.shoppingCart{
+    color: var(--text-color-2);
+}
+
+.shop:hover .shoppingCart{
+    color: var(--primary-color-hover);
+}
+
+.amountBox{
+    position: absolute;
+    top: -3px;
+    right: -30px;
+}
+
+.badges{
+    color: var(--text-color);
+}
+
+.packets{
+    background-color: #C90406;
+}
+
+.onsale{
+    background-color: #FF6600;
+}
+
+@media only screen and (max-width: 992px) {
+    .navMiddle .buttons{
+        padding: 0 1px!important;
+    }
+    .navBottom img{
+        margin-top: 0!important;
+    }
+
+    .navInfo span{
+        margin-top: 2px;
+    }
+}
+
+.nav-desktop{
+    height: 100px;
+}
+
+.navBottom{
+    width: 100%;
+    padding: 7px;
+    background-color: var(--secondary-color);
+}
+
+.navInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBottom img{
+    pointer-events: none;
+    margin-top: 1px;
+}
+
+.navInfo strong{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    font-family: 'Futura PT', sans-serif;
+    pointer-events: none;
+    height: 17px;
+}
+
+.navInfo span{
+    font-size: 0.8rem;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    pointer-events: none;
+    height: 17px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navInfo strong{
+        height: auto;
+        font-size: 0.5rem;
+    }
+    
+    .navInfo span{
+        height: auto;
+        font-size: 0.6rem;
+    }
+    
+}
+
+.navbar{
+    z-index: 999!important;
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+    transition: top 99ms;
+}
+
+.navbar-hide{
+    top: -151px;
+}
+
+.navMiddle{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 35px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navMiddle .buttons{
+    color: var(--text-color-2);
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 1rem;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1; 
+    transition: all .3s;
+    font-family: 'Futura PT', sans-serif;
+}
+
+.navMiddle .buttons:hover{
+    line-height: 35px;
+    background-color: var(--text-color-2);
+    color: var(--text-color);
+}
+
+.buttons-active{
+    border-inline: 3px solid white;
+}
+
+.boxDrawer{
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    height: 100vh;
+    opacity: 0;
+    transition: right .4s ease, opacity .4s ease;
+    z-index: 9999;
+}
+
+.boxDrawer.d-flex {
+    right: 0; 
+    opacity: 1;
+}
+
+.boxDrawerContent{
+    min-width: 400px;
+    height: 100vh;
+    background-color: var(--text-color-2);
+    position: absolute;
+    right: 0;
+}
+
+
+.boxDivider{
+    height: 1px;
+    background-color: #dadada;
+    width: 100%;
+}
+
+.boxDrawerTitle{
+    position: relative;
+    width: 100%;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxDrawerTitle h5{
+    color: var(--main-color);
+    font-size: 18px;
+    margin: 0;
+    margin-top: 2px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.boxDrawerClose{
+    border: 1px solid #d4d4d4;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.boxDrawerClose .boxDrClose{
+    height: 17px!important;
+    width: 17px!important;
+}
+
+.boxDrawerShipping{
+    padding: 15px;
+    text-align: center;
+    color: #000;
+}
+
+.boxDrawerShippingNotice span{
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: inherit;
+    text-align: center;
+    display: block;
+}
+
+.boxDrawerShippingBar{
+    width: 100%;
+    height: 10px;
+    background: #ececec;
+    border-radius: 50px;
+    position: relative;
+}
+
+.shippingProgress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    max-width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50px;
+    background-size: 20px 20px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    animation: moveBackground 5s linear infinite;
+}
+
+.shippingProgressCompleted{
+    background: #108f36;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    animation: moveBackground 5s linear infinite;
+    background-size: 20px 20px;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -60px -60px;
+    }
+}
+
+.boxDrawerCoupon{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxDrawerCoupon input[type="text"]{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    width: calc(100% - 50px);
+    flex: auto;
+    height: 40px;
+    border: 1px solid #dadada;
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.boxDrawerCoupon button{
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border: 0;
+    background: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    transition: all .2s;
+    border: 1px solid var(--main-color);
+}
+
+.boxDrawerCoupon button svg {
+    width: 26px;
+    height: 26px;
+}
+
+.boxDrawerCheckoutInfo{
+    position: relative;
+    padding: 5px 15px 0 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.boxDrawerCheckoutInfo span:first-child {
+    padding-right: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.boxDrawerCheckoutInfo span:last-child {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.boxDrawerCheckoutBtn button{
+    text-align: center;
+    max-width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 9px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+    user-select: none;
+    width: 100%;
+    border: 1px solid var(--main-color);
+}
+
+.boxDrawerCheckoutBtn button:hover, .boxDrawerCoupon button:hover{
+    background: var(--text-color-2);
+    color: var(--main-bg-color);
+}
+
+.boxDrawerCheckoutBtn span{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;
+    font-family: "Inter", sans-serif;
+}
+
+.boxDrawerCheckoutBtn svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: var(--text-color-2);
+}
+
+.boxDrawerCheckoutBtn button:hover span,
+.boxDrawerCheckoutBtn button:hover svg,
+.boxDrawerCoupon button:hover svg
+{
+    color: var(--main-color);
+}
+
+.boxDrawerHeader{
+    height: 570px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.boxDrawerItem{
+    padding: 26px 15px;
+    display: flex;
+    width: 100%;
+}
+
+.boxDrawerItemImage{
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.boxDrawerItemImage img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.boxDrawerItemImage img:hover{
+    transform: scale(1.1);
+}
+
+
+.boxDrawerItemImage canvas{
+    width: 100px!important;
+    height: 90px!important;
+}
+
+.boxDrawerItemDetails{
+    padding-left: 12px;
+    position: relative;
+}
+
+.boxDrawerItemInfo{
+    padding-right: 35px;
+}
+
+.boxDrawerItemInfo span{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.boxDrawerItemInfo span:hover{
+    color: var(--main-color-hover)
+}
+
+.boxDrawerTrash{
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    color: var(--main-color);
+    position: absolute;
+    right: 0;
+    top: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+.boxDrawerTrash:hover{
+    color:var(--main-color-hover)
+}
+
+.boxDrawerItemPrice{
+    color: #737373;
+}
+
+.boxDrawerItemQuantity{
+    display: flex;
+    margin-top: 5px;
+}
+
+.boxDrawerItemQuantity input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    width: 46px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.boxDrawerItemQuantity button{
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #363232;
+    background-color: var(--main-color);
+}
+
+.boxDrawerItemQuantity .css-i4bv87-MuiSvgIcon-root{
+    font-size: 1rem;
+}
+
+.boxDrawerEmptyBox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxDrawerEmptyBox span{
+    font-size: 36px;
+}
+
+.boxDrawerEmptyBox svg{
+    font-size: 300px;
+    color: var(--main-color);
+}
+
+.boxDrawerItems .row {
+    margin-left: 0;
+}
+
+.codeValidDiscountBefore{
+    font-family: "Inter", sans-serif;
+    text-decoration: line-through;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.codeValidDiscountPercentage{
+    margin-right: 7px;
+    background-color: red;
+    padding-left: 4px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.extraMg{
+    margin-right: 42px;
+}
+
+.disabledCoupon{
+    background: #108f36!important;
+    color: white!important;
+    border: 0!important;
+}
+
+.disableBtnCoupon{
+    background: #108f36!important;
+    color: white!important;
+    border: 0!important;
+}
+
+.disableBtnCoupon:hover svg{
+    color: rgb(226, 17, 17)!important;
+}
+
+.removeAllItems{
+    z-index: 6991;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    top: -5400%;
+    left: -10%;
+    opacity: 0;
+    transition: opacity .4s ease, top .4s ease;
+}
+
+.removeAllItems.d-flex{
+    top: 749%;
+    opacity: 1;
+}
+
+.boxDrawerInfoGroup{
+    position: absolute;
+    left: 45%;
+}
+
+.productItemDash2{
+    width: 282px!important;
+}
+
+@media only screen and (max-width: 1399px) {
+    .productItemDash2{
+        width: 237px!important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .productItemDash2{
+        width: 192px!important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .productItemDash2{
+        width: 133px!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .productItemDash2{
+        width: 100%!important;
+    }
+}
+
+.productSingleItemDescription{
+    margin-top: 50px;
+    width: 100%;
+}
