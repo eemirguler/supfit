@@ -58,7 +58,7 @@ Users can find answers to frequently asked questions (FAQs) and ask any remainin
 
 ### 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/supfit.git
+   git clone https://github.com/eemirguler/supfit.git
    cd supfit
    ```
 
